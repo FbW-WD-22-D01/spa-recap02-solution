@@ -1,0 +1,54 @@
+#loading {
+    font-size: 1.25rem;
+    color: #777;
+  }
+  
+  #colors {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+  }
+  #colors .color {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    border-radius: 0.25rem;
+    line-height: 10rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-basis: 100%;
+    margin: 0 0 5% 0;
+  }
+  @media screen and (min-width: 520px) {
+    #colors .color {
+      flex-basis: 45%;
+      margin: 0 5% 5% 0;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    #colors .color {
+      flex-basis: 25%;
+      margin: 0 5% 5% 0;
+    }
+  }
+  #colors .color:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+  #colors .btn-delete {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
